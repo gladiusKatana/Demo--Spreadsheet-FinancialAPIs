@@ -25,10 +25,6 @@ class DashboardViewModel: BitcoinAndFiatAPIViewModel {
             return n[0] * 2
         }
         
-//        setFormulaForNode(2,0,
-//                          inputs: [(2,1)]) { n in
-//            return n[0]// * 2
-//        }
     }
     
 }
