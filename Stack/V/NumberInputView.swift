@@ -15,8 +15,10 @@ struct NumberInputView: View {
     var body: some View {
         VStack(spacing: 20) {
             TextField("Edit value", text: $textValue)
+#if os(iOS)
                 .keyboardType(.decimalPad)
                 .multilineTextAlignment(.center)
+#endif
                 .focused($isInputActive)
                 .onAppear {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
